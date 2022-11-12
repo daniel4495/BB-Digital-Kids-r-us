@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../assets/recursos/main/logo.png"
 import { navlist } from '../assets/data/data'
 import { Link } from 'react-router-dom'
+import { FcSearch, FcLike, FcPortraitMode } from "react-icons/fc";
 
 export const Header = () => {
   return (
@@ -23,6 +24,16 @@ export const Header = () => {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div className='right'>
+                        <div className="right_search">
+                            <input type="text" placeholder='Search products...' />
+                            <FcSearch className="searchIcon menuIcon"/>
+                        </div>
+                    </div>
+                    <div className="right_user">
+                        <FcPortraitMode className="userIcon menuIcon"/>
+                        <FcLike className="userIcon menuIcon"/>
                     </div>
                 </nav>
             </div>
