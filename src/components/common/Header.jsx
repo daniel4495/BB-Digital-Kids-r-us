@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../assets/recursos/main/logo.png"
 import { navlist } from '../assets/data/data'
 import { Link } from 'react-router-dom'
-import { FcSearch, FcLike, FcPortraitMode } from "react-icons/fc";
+import { FaSearch, FaRegHeart, FaRegUser, FaShoppingCart } from "react-icons/fa";
 
 export const Header = () => {
   return (
@@ -13,7 +13,7 @@ export const Header = () => {
                     <div className="toogle">
                         <button>menu</button>
                     </div>
-                    <div className="left">
+                    <div className="centerLogo">
                         <img src={logo} alt="" />
                     </div>
                     <div className="center">
@@ -28,12 +28,18 @@ export const Header = () => {
                     <div className='right'>
                         <div className="right_search">
                             <input type="text" placeholder='Search products...' />
-                            <FcSearch className="searchIcon menuIcon"/>
+                            <FaSearch className="searchIcon menuIcon"/>
                         </div>
                     </div>
                     <div className="right_user">
-                        <FcPortraitMode className="userIcon menuIcon"/>
-                        <FcLike className="userIcon menuIcon"/>
+                        <FaRegUser className="userIcon menuIcon"/>
+                        <FaRegHeart className="userIcon menuIcon"/>
+                    </div>
+                    <div className="right_card">
+                        <button className="button">
+                            <FaShoppingCart className="shop menuIcon"/>
+                            (0)
+                        </button>
                     </div>
                 </nav>
             </div>
