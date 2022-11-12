@@ -4,6 +4,7 @@ import { navlist } from '../assets/data/data'
 import { Link } from 'react-router-dom'
 import { FaSearch, FaRegHeart, FaRegUser, FaShoppingCart } from "react-icons/fa";
 
+
 export const Header = () => {
   return (
     <>

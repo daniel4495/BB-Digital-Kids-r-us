@@ -1,27 +1,27 @@
 export const navlist = [
 
     {
-        text: "home",
+        text: "HOME",
         path: "/",
     },
     {
-        text: "shop features",
+        text: "SHOP FEATURES",
         path: "/shop",
     },
     {
-        text: "clothes",
+        text: "CLOTHES",
         path: "/clothes",
     },
     {
-        text: "pages",
+        text: "PAGES",
         path: "/pages",
     },
     {
-        text: "shortcodes",
+        text: "SHORTCODES",
         path: "/shortcodes",
     },
     {
-        text: "post types",
+        text: "POST TYPES",
         path: "/post",
     },
 
